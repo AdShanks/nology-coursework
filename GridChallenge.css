@@ -1,0 +1,39 @@
+*{
+  margin: 0
+  ;padding: 0px;
+  box-sizing: border-box;}
+
+  header {
+    height: 80px;
+    background-color: black;
+    color: white;
+  }
+
+  nav {
+    background-color: brown;
+    color: white;
+    text-align: center;
+  }
+
+  main {
+    background-color: gold;
+    text-align: center;
+  }
+
+  aside {
+    background-color: burlywood;
+    text-align: center;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+  }
+
+
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+  }
+
