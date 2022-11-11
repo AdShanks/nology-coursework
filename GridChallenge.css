@@ -3,37 +3,157 @@
   ;padding: 0px;
   box-sizing: border-box;}
 
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+  }
+   
+   
+    
   header {
-    height: 80px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-bottom: 5px;
     background-color: black;
     color: white;
+    padding: 20px;
+
+  }
+  
+  nav {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+   
+  }
+  
+  main {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-top: 5px;
+    background-color: gold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+   }
+  
+  
+  aside {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin-right: 5px;
+    text-align: center;
+    background-color: beige
+    
+  }
+  
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-top: 5px;
+    background-color: black;
+    color: white;
+    padding: 20px
+  }
+
+  
+@media screen and (max-width:500px) {
+   
+
+ 
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100vh;}
+
+
+  header {
+     background-color: black;
+    color: white;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 
   nav {
     background-color: brown;
     color: white;
     text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    
+    
+    
+    
   }
 
   main {
     background-color: gold;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+    
+    
   }
 
   aside {
-    background-color: burlywood;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin-right: 5px;
     text-align: center;
-  }
-
-  footer {
-    background-color: black;
-    color: white;
-  }
+    background-color: beige
 
 
-  body {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px 100px;
+    
+    
   }
+footer {
+  background-color: black;
+  color: white;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;}}
+
+
+
+
+
+
 
